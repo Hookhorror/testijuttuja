@@ -10,7 +10,7 @@ RUN git clone https://github.com/docker-hy/frontend-example-docker
 WORKDIR frontend-example-docker
 RUN npm install
 
-EXPOSE 5000
+# EXPOSE 5000
 # EXPOSE $PORT 
 
 # ENV API_URL http://localhost:8000
