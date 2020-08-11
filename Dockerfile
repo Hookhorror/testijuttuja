@@ -1,5 +1,8 @@
 FROM devopsdockeruh/heroku-example:latest
 
+ENV JEE="jeejee"
+ENV JEPULIS="kikkeliskokkelis"
+
 # FROM ubuntu:16.04 
 
 # WORKDIR front
