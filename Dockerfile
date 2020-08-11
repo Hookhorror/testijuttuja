@@ -1,19 +1,21 @@
-FROM ubuntu:16.04 
+FROM devopsdockeruh/heroku-example:latest
 
-WORKDIR front
+# FROM ubuntu:16.04 
 
-RUN apt-get update 
-RUN apt-get install curl git -y
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
-RUN apt-get install -y nodejs
-RUN git clone https://github.com/docker-hy/frontend-example-docker
-WORKDIR frontend-example-docker
-RUN npm install
+# WORKDIR front
 
-# EXPOSE 5000
-# EXPOSE $PORT 
+# RUN apt-get update 
+# RUN apt-get install curl git -y
+# RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+# RUN apt-get install -y nodejs
+# RUN git clone https://github.com/docker-hy/frontend-example-docker
+# WORKDIR frontend-example-docker
+# RUN npm install
 
-# ENV API_URL http://localhost:8000
+# # EXPOSE 5000
+# # EXPOSE $PORT 
 
-ENTRYPOINT ["npm"]
-CMD ["start"]
+# # ENV API_URL http://localhost:8000
+
+# ENTRYPOINT ["npm"]
+# CMD ["start"]
