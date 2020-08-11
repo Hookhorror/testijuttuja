@@ -11,6 +11,7 @@ WORKDIR frontend-example-docker
 RUN npm install
 
 # EXPOSE 5000
+EXPOSE $PORT 
 
 # ENV API_URL http://localhost:8000
 
